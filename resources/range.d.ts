@@ -7,6 +7,7 @@ import {
   Reference,
   TechnicalProperties,
   SpecificResource,
+  NavPlaceExtension,
 } from '@iiif/presentation-3';
 import { StructuralNormalized } from '../iiif/structural';
 import { DescriptiveNormalized } from '../iiif/descriptive';
@@ -17,4 +18,5 @@ export type NormalizedRangeItemSchemas = Reference<'Range'> | SpecificResource<R
 export declare type RangeNormalized = OmitProperties<TechnicalProperties, RangeOmittedTechnical> &
   OmitProperties<DescriptiveNormalized, RangeOmittedDescriptive> &
   OmitProperties<StructuralNormalized<NormalizedRangeItemSchemas>, RangeOmittedStructural> &
-  OmitProperties<LinkingNormalized, RangeOmittedLinking> & { type: 'Range' };
+  OmitProperties<LinkingNormalized, RangeOmittedLinking> &
+  NavPlaceExtension & { type: 'Range' };

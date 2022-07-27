@@ -3,6 +3,7 @@ import {
   CollectionOmittedLinking,
   CollectionOmittedStructural,
   CollectionOmittedTechnical,
+  NavPlaceExtension,
   OmitProperties,
   Reference,
   TechnicalProperties,
@@ -16,6 +17,7 @@ export type NormalizedCollectionItemSchemas = Reference<'Collection'> | Referenc
 export declare type CollectionNormalized = OmitProperties<TechnicalProperties, CollectionOmittedTechnical> &
   OmitProperties<DescriptiveNormalized, CollectionOmittedDescriptive> &
   OmitProperties<StructuralNormalized<NormalizedCollectionItemSchemas>, CollectionOmittedStructural> &
-  OmitProperties<LinkingNormalized, CollectionOmittedLinking> & {
+  OmitProperties<LinkingNormalized, CollectionOmittedLinking> &
+  NavPlaceExtension & {
     type: 'Collection';
   };
