@@ -1,5 +1,4 @@
 import {
-  AnnotationPageItemSchemas,
   AnnotationPageOmittedDescriptive,
   AnnotationPageOmittedLinking,
   AnnotationPageOmittedStructural,
@@ -14,10 +13,7 @@ import { DescriptiveNormalized } from '../iiif/descriptive';
 
 export declare type AnnotationPageNormalized = OmitProperties<TechnicalProperties, AnnotationPageOmittedTechnical> &
   OmitProperties<DescriptiveNormalized, AnnotationPageOmittedDescriptive> &
-  OmitProperties<
-    StructuralNormalized<Reference<AnnotationPageItemSchemas>, AnnotationPageItemSchemas>,
-    AnnotationPageOmittedStructural
-  > &
+  OmitProperties<StructuralNormalized<Reference<'Annotation'>>, AnnotationPageOmittedStructural> &
   OmitProperties<LinkingNormalized, AnnotationPageOmittedLinking> & {
     type: 'AnnotationPage';
   };

@@ -1,5 +1,4 @@
 import {
-  CanvasItemSchemas,
   CanvasOmittedDescriptive,
   CanvasOmittedLinking,
   CanvasOmittedStructural,
@@ -14,5 +13,5 @@ import { LinkingNormalized } from '../iiif/linking';
 
 export declare type CanvasNormalized = OmitProperties<TechnicalProperties, CanvasOmittedTechnical> &
   OmitProperties<DescriptiveNormalized, CanvasOmittedDescriptive> &
-  OmitProperties<StructuralNormalized<Reference<CanvasItemSchemas>, CanvasItemSchemas>, CanvasOmittedStructural> &
+  OmitProperties<StructuralNormalized<Reference<'AnnotationPage'>>, CanvasOmittedStructural> &
   OmitProperties<LinkingNormalized, CanvasOmittedLinking> & { type: 'Canvas' };

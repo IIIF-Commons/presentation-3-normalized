@@ -1,4 +1,4 @@
-import { Reference } from '@iiif/presentation-3';
+import { Reference, SpecificResource } from '@iiif/presentation-3';
 import { ServiceNormalized } from '../resources/service';
 
 export declare type LinkingNormalized = {
@@ -7,7 +7,7 @@ export declare type LinkingNormalized = {
   services: Array<ServiceNormalized>;
   rendering: Array<Reference<'ContentResource'>>;
   partOf: Array<Reference<'Collection' | 'Manifest'>>;
-  start: Reference<'Canvas' | 'Selector'> | null;
+  start: SpecificResource<Reference<'Canvas'>> | null;
   supplementary: Reference<'AnnotationCollection'> | null;
   homepage: Array<Reference<'ContentResource'>>;
 };

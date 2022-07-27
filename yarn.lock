@@ -31,12 +31,12 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@iiif/presentation-3@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@iiif/presentation-3/-/presentation-3-1.0.6.tgz#bec210e4df2549c363733dc3215b20c4e9160a46"
-  integrity sha512-00wzi4ocMe0bvxkYsv+SzWRPeN8ZHN2n86aJ2o2QpZiaVQ2AsewBPCMarGryAZ0x7CQv0yO9HV1xj6jiuhl9dQ==
+"@iiif/presentation-3@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@iiif/presentation-3/-/presentation-3-2.0.1.tgz#0b05a3aed4c754646935f47a2d5effd616f9bdcf"
+  integrity sha512-MwL4nJn59kkMkynpjl/Hjh6C3yhkoNk/Orj19FPKbEPKfJIYD7JBhTyjmZ8pSW/AOErX58TflanF22QX4eeOfQ==
   dependencies:
-    "@types/geojson" "^7946.0.7"
+    "@types/geojson" "^7946.0.10"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -59,7 +59,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@types/geojson@^7946.0.7":
+"@types/geojson@^7946.0.10":
   version "7946.0.10"
   resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-7946.0.10.tgz#6dfbf5ea17142f7f9a043809f1cd4c448cb68249"
   integrity sha512-Nmh0K3iWQJzniTuPRcJn5hxXkfB1T1pgB89SBig5PlJQU5yocazeu4jATJlaA0GYFKWMqDdvYemoSnF2pXgLVA==

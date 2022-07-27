@@ -7,13 +7,13 @@
   "author": "Stephen Fraser <stephen.fraser@digirati.com>",
   "license": "MIT",
   "scripts": {
-    "build": "dts-bundle-generator  --external-imports=@iiif/presentation-3 --out-file=dist/presentation-3-normalized.d.ts index.d.ts"
+    "build": "rm -rf dist/ && dts-bundle-generator  --external-imports=@iiif/presentation-3 --out-file=dist/presentation-3-normalized.d.ts index.d.ts"
   },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@iiif/presentation-3": "^1.0.6"
+    "@iiif/presentation-3": "^2.0.1"
   },
   "files": [
     "dist",

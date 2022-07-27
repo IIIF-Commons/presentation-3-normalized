@@ -1,5 +1,4 @@
 import {
-  ItemSchemas,
   OmitProperties,
   RangeOmittedDescriptive,
   RangeOmittedLinking,
@@ -7,12 +6,15 @@ import {
   RangeOmittedTechnical,
   Reference,
   TechnicalProperties,
+  SpecificResource,
 } from '@iiif/presentation-3';
 import { StructuralNormalized } from '../iiif/structural';
 import { DescriptiveNormalized } from '../iiif/descriptive';
 import { LinkingNormalized } from '../iiif/linking';
 
+export type NormalizedRangeItemSchemas = Reference<'Range'> | SpecificResource<Reference<'Canvas'>>;
+
 export declare type RangeNormalized = OmitProperties<TechnicalProperties, RangeOmittedTechnical> &
   OmitProperties<DescriptiveNormalized, RangeOmittedDescriptive> &
-  OmitProperties<StructuralNormalized<Reference<ItemSchemas>, ItemSchemas>, RangeOmittedStructural> &
+  OmitProperties<StructuralNormalized<NormalizedRangeItemSchemas>, RangeOmittedStructural> &
   OmitProperties<LinkingNormalized, RangeOmittedLinking> & { type: 'Range' };

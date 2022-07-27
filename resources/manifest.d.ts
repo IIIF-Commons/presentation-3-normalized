@@ -1,5 +1,4 @@
 import {
-  ManifestItemSchemas,
   ManifestOmittedDescriptive,
   ManifestOmittedLinking,
   ManifestOmittedTechnical,
@@ -13,7 +12,7 @@ import { LinkingNormalized } from '../iiif/linking';
 
 export declare type ManifestNormalized = OmitProperties<TechnicalProperties, ManifestOmittedTechnical> &
   OmitProperties<DescriptiveNormalized, ManifestOmittedDescriptive> &
-  StructuralNormalized<Reference<ManifestItemSchemas>, ManifestItemSchemas> &
+  StructuralNormalized<Reference<'Canvas'>> &
   OmitProperties<LinkingNormalized, ManifestOmittedLinking> & {
     type: 'Manifest';
   };
