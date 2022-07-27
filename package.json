@@ -1,7 +1,7 @@
 {
   "name": "@iiif/presentation-3-normalized",
   "description": "IIIF Presentation v3.0 normalized typescript types",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "source": "index.js",
   "types": "dist/presentation-3-normalized.d.ts",
   "author": "Stephen Fraser <stephen.fraser@digirati.com>",
