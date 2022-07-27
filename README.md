@@ -22,7 +22,7 @@ This is map of all the resources normalized where the following modifications ar
 - Nested resources are replaced with references (id/type)
 - References that _could_ have a selector are mapped to `SpecificResource`
 
-The [@iiif/parser])(https://github.com/IIIF-Commons/parser) library is an implementation of this normalization
+The [@iiif/parser](https://github.com/IIIF-Commons/parser) library is an implementation of this normalization
 specification, although they are free to be used standalone.
 
 | Type                               | Description                                            |
