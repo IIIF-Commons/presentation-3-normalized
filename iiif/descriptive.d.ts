@@ -2,15 +2,10 @@ import { DescriptiveProperties, OmitProperties, Reference } from '@iiif/presenta
 
 export declare type DescriptiveNormalized = OmitProperties<
   DescriptiveProperties,
-  'provider' | 'thumbnail' | 'accompanyingCanvas' | 'placeholderCanvas' | 'posterCanvas'
+  'provider' | 'thumbnail' | 'accompanyingCanvas' | 'placeholderCanvas'
 > & {
   thumbnail: Array<Reference<'ContentResource'>>;
   placeholderCanvas: Reference<'Canvas'> | null;
   accompanyingCanvas: Reference<'Canvas'> | null;
   provider: Array<Reference<'Agent'>>;
-
-  /**
-   * @deprecated since 3.0-beta - use placeholderCanvas or accompanyingCanvas
-   */
-  posterCanvas: never;
 };
