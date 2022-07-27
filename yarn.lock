@@ -31,10 +31,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@iiif/presentation-3@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@iiif/presentation-3/-/presentation-3-2.0.1.tgz#0b05a3aed4c754646935f47a2d5effd616f9bdcf"
-  integrity sha512-MwL4nJn59kkMkynpjl/Hjh6C3yhkoNk/Orj19FPKbEPKfJIYD7JBhTyjmZ8pSW/AOErX58TflanF22QX4eeOfQ==
+"@iiif/presentation-3@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@iiif/presentation-3/-/presentation-3-2.0.3.tgz#ba804238b962a71674a60b7b2af7d41902438a66"
+  integrity sha512-PiZt0h0JvYU/Ju97DGb302MerIeC4a6nozynfqyx69Do9mx32eWgpoz1mfBnZOF6jAH9t4Ey+Zzh/Ggq92Lpiw==
   dependencies:
     "@types/geojson" "^7946.0.10"
 
